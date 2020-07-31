@@ -1,0 +1,27 @@
+@import "common.css";
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sorry {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}

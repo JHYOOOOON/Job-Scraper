@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/home.css')}}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Job Search</title>
+  </head>
+  <body>
+    <header>
+      <a href="/"><span class="logo">Job Search🔍</span></a>
+    </header>
+    <div class="section-wrapper">
+      <section>
+        <h1>Job Search</h1>
+        <form action="/report" method="get">
+          <input
+            type="text"
+            placeholder="Search for a job"
+            required
+            name="word"
+          />
+          <button>Search</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p class="footer">Copyright (c) {{year}} JHYOON. All right reserved.</p>
+    </footer>
+  </body>
+</html>
